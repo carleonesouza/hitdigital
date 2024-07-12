@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    box-sizing: border-box;
+  }
+
+  html, body { 
+    height: 100%;
+    padding: 1rem;
+ }
+  body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+  html {
+    box-sizing: border-box;
+    overflow: -moz-scrollbars-vertical;
+    overflow-y: scroll;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    margin: 0;
+    background: #2D2D2D;
+    color: #FFFFFF;
+  }
