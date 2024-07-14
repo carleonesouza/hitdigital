@@ -11,7 +11,10 @@
     height: 100%;
     padding: 1rem;
  }
-  body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+  body { 
+    margin: 0; 
+    font-family: "Montserrat", sans-serif;
+  }
 
   html {
     box-sizing: border-box;
@@ -30,3 +33,29 @@
     background: #2D2D2D;
     color: #FFFFFF;
   }
+  .bg-card {
+    background: rgb(234, 145, 107);
+    width: 860px;
+    line-height: 1.5rem;
+    font-weight: 200;
+    font-size: 15px;
+}
+.border-color{
+  border-color:  #707070;
+}
+
+h1{
+font-size: 22px;
+}
+
+.title{
+  display: block;
+  width: 30px;
+  height: 6px;
+  position: relative;
+  bottom: -4px;
+  background: linear-gradient(#E05A4D,#EA916B);
+  border-color:  linear-gradient(#E05A4D,#EA916B);
+  margin: 0 auto;
+}
+

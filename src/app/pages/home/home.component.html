@@ -1,16 +1,23 @@
 <div class="w-full">
-    <div class="w-full">
-        <app-navbar></app-navbar>
-    </div>
-
-    <div class="w-full">
-        <div class="w-full">
-            <h1>{{title}}</h1>
-            <hr class="bg-slate-50 w-full">
+    <div class="w-full p-2">
+        <div class=" flex w-full text-center justify-center">
+            <h1 class="border-b-2 border-color">{{title}}<span class="title"></span></h1>
         </div>
-        <div class="flex">
-            <p>{{data}}</p>
+        <div class="w-full justify-center flex mb-5">
+            <div class="p-6 bg-card rounded-lg shadow mt-10">
+                @if (!data) {
+                <div role="status" class="max-w-sm animate-pulse">
+                    <div class="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48 mb-4"></div>
+                    <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[360px] mb-2.5"></div>
+                    <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
+                    <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[330px] mb-2.5"></div>
+                    <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[300px] mb-2.5"></div>
+                    <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[360px]"></div>
+                    <span class="sr-only">Loading...</span>
+                </div>
+                }
+                <p>{{data}}</p>
+            </div>
         </div>
-        
     </div>
-  </div>
+</div>

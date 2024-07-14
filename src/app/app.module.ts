@@ -8,10 +8,12 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { IntegrationService } from './services/integration.service';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { ComponentsModule } from './components/components.module';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
     
   ],
   imports: [
@@ -19,7 +21,9 @@ import { CommonModule } from '@angular/common';
     CommonModule,
     AppRoutingModule,
     MatSnackBarModule,
-    HttpClientModule 
+    HttpClientModule ,
+    ComponentsModule,
+    MatProgressBarModule
     
   ],
   providers: [

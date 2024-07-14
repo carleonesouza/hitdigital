@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
-import { BehaviorSubject, catchError, tap } from 'rxjs';
+import { BehaviorSubject, catchError, delay, tap } from 'rxjs';
 import { environment } from 'src/environments/environment.development';
 
 @Injectable({
